@@ -1,13 +1,15 @@
-const zero = (f=null) => f ? f(0) : 0
-const one = (f=null) => f ? f(1) : 1
-const two = (f=null) => f ? f(2) : 2
-const three = (f=null) => f ? f(3) : 3
-const four = (f=null) => f ? f(4) : 4
-const five = (f=null) => f ? f(5) : 5
-const six = (f=null) => f ? f(6) : 6
-const seven = (f=null) => f ? f(7) : 7
-const eight = (f=null) => f ? f(8) : 8
-const nine = (f=null) => f ? f(9) : 9
+const getVal = (x) => x
+
+const zero = (f=getVal) => f(0)
+const one = (f=getVal) => f(1)
+const two = (f=getVal) => f(2)
+const three = (f=getVal) => f(3)
+const four = (f=getVal) => f(4)
+const five = (f=getVal) => f(5)
+const six = (f=getVal) => f(6)
+const seven = (f=getVal) => f(7)
+const eight = (f=getVal) => f(8)
+const nine = (f=getVal) => f(9)
 
 const plus = (a) => (b) => a + b
 const minus = (a) => (b) => b - a
